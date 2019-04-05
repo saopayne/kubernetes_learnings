@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-quota
+  namespace: mastering-kube
+spec:
+  hard:
+    requests.cpu: "4"
+    requests.memory: 2Gi
+    limits.cpu: "2"
+    limits.memory: 1Gi

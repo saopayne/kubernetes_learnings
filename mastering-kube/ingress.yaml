@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test
+spec:
+  rules:
+    - host: home.saopayne.com
+      http:
+        paths:
+        - path: /home
+          backend:
+            serviceName: nginx
+            servicePort: 80
+    - host: root.saopayne.com
+      http:
+        paths:
+        - path: /root
+          backend:
+            serviceName: nginx
+            servicePort: 80

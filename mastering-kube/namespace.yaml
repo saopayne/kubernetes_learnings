@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mastering-kube
+  labels:
+    apps: web-based
+  annotations:
+    type: demo
